@@ -16,10 +16,12 @@
 	font-size: 11px;
 	line-height: 15px;
 	text-transform: uppercase;
-
 }
 .logo-link {
-	color: #E3B873;
+	color: #e3b873;
+}
+.menu-btn {
+	display: none;
 }
 .list {
 	display: flex;
@@ -30,37 +32,104 @@
 	line-height: 15px;
 	text-transform: uppercase;
 }
-.list-item+.list-item {
+.list-item + .list-item {
 	margin-left: 47px;
 }
 .list-link {
-	color: #FFFFFF;
-	transition: all .5s;
+	color: #ffffff;
+	transition: all 0.5s;
 }
 .list-link:hover {
-	color: #E3B873;
+	color: #e3b873;
 }
 
 .phone {
 	font-size: 11px;
 	line-height: 15px;
-	color: #E3B873;
+	color: #e3b873;
 }
 .btn {
 	font-size: 11px;
 	text-transform: uppercase;
-	color: #FFF;
+	color: #fff;
 	padding: 13px 33px;
-	background: #E3B873;
+	background: #e3b873;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	border-bottom: 1px transparent;
 	border-radius: 2px;
-	transition: all .5s 
+	transition: all 0.5s;
 }
 
 .btn:hover {
-	background: #FFF;
-	border-bottom: 1px #FFF;
-	color:  #000;
-	text-shadow: #E3B873 0 0 3px;
+	background: #fff;
+	border-bottom: 1px #fff;
+	color: #000;
+	text-shadow: #e3b873 0 0 3px;
 }
+
+@media (max-width: 1060px) {
+	.list {
+		display: block;
+		position: absolute;
+		top: 78px;
+		left: 0;
+		right: 0;
+		background-color: #131313;
+		text-align: center;
+	}
+	.list-item+.list-item {
+		margin-right: 47px;
+	}
+	.list-link {
+		display: block;
+		padding: 10px 0;
+	}
+	.menu-btn {
+		display: block;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		width: 50px;
+		height: 40px;
+		position: relative;
+		order: 2;
+	}
+	.menu-btn::before {
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 2px;
+		background-color: #fff;
+		left: 0;
+		top: 18px;
+	}
+}
+
+@media (max-width: 600px) {
+	.phone {
+		display: none;
+	}
+	.btn {
+		margin-right: 30px;
+	}
+}
+
+	@media (max-width: 440px) {
+		.logo {
+			font-size: 9px;
+		}
+		.btn {
+			font-size: 9px;
+			padding: 10px 26px;
+		}
+		.menu-btn {
+			width: 40px;
+			height: 30px;
+		}
+		.menu-btn::before {
+			width: 40px;
+			top: 12px;
+		}
+	}
