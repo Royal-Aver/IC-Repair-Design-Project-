@@ -1,0 +1,44 @@
+.works {
+}
+.works__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.works__projects {
+	padding: 186px 0 416px;
+}
+.works__projects-title {
+}
+.works__projects-text {
+}
+.works__projects-options {
+}
+.options__title {
+}
+.options__text {
+}
+
+.slider {
+	position: relative;
+}
+
+.slick-track {
+	display: flex;
+}
+.slick-list {
+	overflow: hidden;
+}
+
+.slick__arrow {
+	position: absolute;
+}
+
+.slick-prew.slick__arrow {
+	position: absolute;
+	left: 0;
+}
+
+.slick-next.slick__arrow {
+	position: absolute;
+	left: 0;
+}
